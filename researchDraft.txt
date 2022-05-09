@@ -1,0 +1,21 @@
+
+ Fourier Transform Resources
+
+https://www.youtube.com/watch?v=spUNpyF58BY
+
+https://towardsdatascience.com/fast-fourier-transform-937926e591cb
+
+Springs
+
+https://physics.info/springs/
+
+https://www.sciencedirect.com/topics/mathematics/spring-system
+
+
+Springs in series and parralel
+
+https://www.youtube.com/watch?v=Py7qnXtMIUA
+
+Spring oscillations
+
+https://www.khanacademy.org/science/in-in-class11th-physics/in-in-11th-physics-oscillations/in-in-simple-harmonic-motion-in-spring-mass-systems/a/simple-harmonic-motion-of-spring-mass-systems-ap
