@@ -24,7 +24,7 @@ public class Spring{
         double t0 = 0;
         double[] xt = new double[(int)Math.ceil((t- t0)/dt)];
         
-        for(int i = 0, j = 0; i <= t; i+=t0, j++ ){
+        for(int i = 0, j = 0; i <= t; i+=dt, j++ ){
             double val = x0* Math.cos(w*i) + (v0/w) * Math.sin(w*i);
             xt[j]=val;
         }

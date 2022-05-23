@@ -5,19 +5,30 @@ public class Converter {
     HashMap<Integer, String> binaryToSpringSystem = new HashMap<Integer, String>();
     int n = 8;
     
-    public int getSprings(Integer[] binary){
+    public int binarytoDecimal(Integer[] binary){
+        Spring spring = binaryToSpring(binary);
+
+        return (int)spring.getK();
+    }
+
+    public Spring binaryToSpring(Integer[] binary){
         evaluateBinary(binary);
         String system = generateSpringExpr(binaryToSpringSystem);
 
         Spring spring = (new SpringArray()).equivalentSpring(system);
 
-        return (int)spring.getK();
+        return spring;
 
     }
 
+    public double[] getSpringOssil(Spring springSystem){
+        double dt = 0.05;
+        double x0 = 0;
+        double t = 5;
+        return springSystem.move(t, dt, x0);
+    }
+
     private void evaluateBinary(Integer[] binary){    
-
-
         for(int i = n-1; i >=0; i--){
             if(binary[i] == 1){
                 int v =  (int)Math.pow(2, n-i-1) ;
@@ -52,9 +63,4 @@ public class Converter {
         return result.toString();
     }
 
-    public static void main(String[] args){
-        Converter c = new Converter();
-        Integer[] arr = {0,0,0,0,0,0,1,1};
-        System.out.println(c.getSprings(arr));
-    }
 }
