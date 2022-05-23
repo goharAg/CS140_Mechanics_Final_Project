@@ -1,4 +1,7 @@
+Fourier Transformation methods are written using  "An Introduction to Computer Simulation Methods: Applications to Physical System" book, Chapter 9.
 
+ 
+ 
  Fourier Transform Resources
 
 https://www.youtube.com/watch?v=spUNpyF58BY
