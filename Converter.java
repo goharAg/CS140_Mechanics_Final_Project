@@ -8,6 +8,10 @@ public class Converter {
     public int binarytoDecimal(Integer[] binary){
         Spring spring = binaryToSpring(binary);
 
+        // here we are supposed to call 'getSpringOssil' method to simulate the movement of the spring
+        // then we should call 'ossillationsTofrequency' methd to simulate our machine processing the movement to get the ossilations
+        // then using our results we should calculate decimal number
+        // however, this way also works, as I calcualte the decimal value using simulated spring system properties 
         return (int)spring.getK();
     }
 
